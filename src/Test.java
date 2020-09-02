@@ -9,13 +9,13 @@ import gameExceptions.IllegalTargetException;
 public class Test {
     public static void main(String[] args) {
         Player Getrol = new Player(new Human(), new Bard());
-        Player Liza = new Player(new Human(), new Bard());
+        Player Lizard = new Player(new Human(), new Bard());
         Monster Zanuda = new HopGoblin(new Goblin());
 
         try {
             Getrol.attack(Zanuda);
-            Liza.attack(Zanuda);
-            Liza.attack(Getrol);
+            Lizard.attack(Zanuda);
+            Lizard.attack(Getrol);
         } catch (IllegalTargetException e) {
             System.out.println(e.getMessage());
         }
