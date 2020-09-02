@@ -1,6 +1,7 @@
 package entities;
 
 import entities.races.Race;
+import gameExceptions.IllegalTargetException;
 import gameplay.mechanics.Ability;
 
 import java.util.HashMap;
@@ -17,11 +18,7 @@ public abstract class AbstractEntity {
         this.race = race;
     }
 
-    public void attack(){
+    public abstract void attack(AbstractEntity enemy) throws IllegalTargetException;
 
-    }
-
-    public void defend(){
-
-    }
+    public abstract void defend();
 }
