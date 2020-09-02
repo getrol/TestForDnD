@@ -2,11 +2,16 @@ package gameplay.mechanics;
 
 public enum Ability {
 
-    STRENGTH,
+
     DEXTERITY,
-    CONSTITUTION,
-    INTELLIGENCE,
-    WISDOM,
+    SAVVY,
+    CHARACTER,
+    STRENGTH,
+    ENDURANCE,
+
+    STEP,
+    DEFENCE,
+    PERSISTENCE,
     CHARISMA
 
 }
