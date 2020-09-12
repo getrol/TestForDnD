@@ -1,6 +1,8 @@
 package entities.characterClasses;
 
-public class Bard implements CharacterClass {
+import java.io.Serializable;
+
+public class Bard implements CharacterClass, Serializable {
     @Override
     public void getClassBonus() {
         System.out.println("Bard bonuses");

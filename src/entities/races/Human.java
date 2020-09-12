@@ -1,6 +1,8 @@
 package entities.races;
 
-public class Human implements Race {
+import java.io.Serializable;
+
+public class Human implements Race, Serializable {
     @Override
     public void getRaceBonus() {
         System.out.println("Humans bonus");

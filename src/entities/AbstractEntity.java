@@ -4,10 +4,11 @@ import entities.races.Race;
 import gameExceptions.IllegalTargetException;
 import gameplay.mechanics.Ability;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class AbstractEntity {
+public abstract class AbstractEntity implements Serializable {
     Race race;
     Map<Ability, Integer> abilityPoints = new HashMap<>();
 
